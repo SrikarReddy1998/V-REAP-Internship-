@@ -1,0 +1,15 @@
+target:
+url: &quot;http://127.0.0.1&quot; # this is the base url addressed by the headless Chrome instance, it can be
+simply your website url
+backend:
+url: &quot;http://127.0.0.1:8000&quot; # your backend server url
+filters:
+userAgent: # .i.e. only whitelist useragents containing the keywords &quot;bot&quot;, &quot;slurp&quot;, &quot;bing&quot; or
+&quot;crawler&quot;
+defaultPolicy: blacklist
+exceptions:
+keywords:
+- bot
+- slurp
+- bing
+- crawler
